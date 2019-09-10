@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Collections.Generic;
 
 namespace DinoDiner.Menu.Entrees
 {
@@ -39,7 +39,7 @@ namespace DinoDiner.Menu.Entrees
             this.dressing = false;
         }
 
-        public void HoldCheese()
+        public void holdCheese()
         {
             this.cheese = false;
         }

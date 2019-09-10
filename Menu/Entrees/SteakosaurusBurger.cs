@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Collections.Generic;
 
 namespace DinoDiner.Menu.Entrees
 {
@@ -17,10 +17,10 @@ namespace DinoDiner.Menu.Entrees
             get
             {
                 List<string> ingredients = new List<string>() { "Steakburger Pattie" };
-                if (bun) ingredients.add("Whole Wheat Bun");
-                if (pickle) ingredients.add("Pickle");
-                if (ketchup) ingredients.add("Ketchup");
-                if (mustard) ingredients.add("Mustard");
+                if (bun) ingredients.Add("Whole Wheat Bun");
+                if (pickle) ingredients.Add("Pickle");
+                if (ketchup) ingredients.Add("Ketchup");
+                if (mustard) ingredients.Add("Mustard");
                 return ingredients;
             }
         }

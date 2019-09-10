@@ -1,9 +1,9 @@
-﻿using System;
+﻿using System.Collections.Generic;
 
 
 namespace DinoDiner.Menu.Entrees
 {
-    public class SteakosaurusBurger
+    public class TRexKingBurger
     {
         private bool bun = true;
         private bool pickle = true;
@@ -12,6 +12,7 @@ namespace DinoDiner.Menu.Entrees
         private bool lettuce = true;
         private bool onion = true;
         private bool mayo = true;
+        private bool tomato = true;
 
 
         public double Price { get; set; }
@@ -21,19 +22,20 @@ namespace DinoDiner.Menu.Entrees
         {
             get
             {
-                List<string> ingredients = new List<string>() { "Three Steakburger Pattie" };
-                if (bun) ingredients.add("Whole Wheat Bun");
-                if (pickle) ingredients.add("Pickle");
-                if (ketchup) ingredients.add("Ketchup");
-                if (mustard) ingredients.add("Mustard");
-                if (lettuce) ingredients.add("Lettuce");
-                if (onion) ingredients.add("Onion");
-                if (mayo) ingredients.add("Mayo");
+                List<string> ingredients = new List<string>() { "Steakburger Pattie", "Steakburger Pattie", "Steakburger Pattie" };
+                if (bun) ingredients.Add("Whole Wheat Bun");
+                if (pickle) ingredients.Add("Pickle");
+                if (ketchup) ingredients.Add("Ketchup");
+                if (mustard) ingredients.Add("Mustard");
+                if (lettuce) ingredients.Add("Lettuce");
+                if (onion) ingredients.Add("Onion");
+                if (mayo) ingredients.Add("Mayo");
+                if (tomato) ingredients.Add("Tomato");
                 return ingredients;
             }
         }
 
-        public SteakosaurusBurger()
+        public TRexKingBurger()
         {
             this.Price = 8.45;
             this.Calories = 728;
@@ -72,6 +74,11 @@ namespace DinoDiner.Menu.Entrees
         public void HoldMayo()
         {
             this.mayo = false;
+        }
+
+        public void HoldTomato()
+        {
+            this.tomato = false;
         }
     }
 }
